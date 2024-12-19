@@ -1,0 +1,16 @@
+span.orange {
+    color: orange;
+}
+
+ul > .orange{
+    color: red;
+}
+div .orange{
+    color: orange;
+}
+.orange + li{
+    color: orange;
+}
+.orange ~ li{
+    color: orange;
+}

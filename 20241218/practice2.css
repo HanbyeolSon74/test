@@ -1,0 +1,44 @@
+*{
+    color: white;
+    background-color: gray;
+}
+.red{
+    background-color: red;
+}
+#first{
+    background-color: blue;
+}
+.second{
+    background-color: green;
+}
+#color{
+    background-color: white;
+}
+h1 span:nth-child(1){
+    color:red;
+}
+
+h1 span:nth-child(2){
+    color:orange;
+}
+
+h1 span:nth-child(3){
+    color:yellow;
+}
+
+h1 span:nth-child(4){
+    color:green;
+}
+
+h1 span:nth-child(5){
+    color:blue;
+}
+h1 span:nth-child(6){
+    color: indigo;
+}
+
+h1 span:nth-child(7){
+    color: purple;
+}
+
+
