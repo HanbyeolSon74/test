@@ -1,0 +1,26 @@
+.boxWrap {
+    display: flex;
+}
+
+.box{
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+.box2{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+
+    /* 전부가 적용 padding도 동일함 */
+    margin: 10px;
+
+    /* 상하, 좌우 */
+    margin: 10px 20px;
+
+    /* 상,우,하,좌 */
+    margin: 10px 10px 10px 10px;
+    margin-left: 10px;
+}

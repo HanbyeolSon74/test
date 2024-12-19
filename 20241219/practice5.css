@@ -1,0 +1,18 @@
+.box{
+    background-color: skyblue;
+    width: auto;
+    height: 300px;
+}
+
+.box2{
+    background-color: blue;
+    margin: 0px auto;
+    width: 300px;
+    height: 300px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 20px;
+    color: white; 
+    
+}

@@ -1,0 +1,12 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border-radius: 0px 0px 10px 0px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
