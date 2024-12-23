@@ -1,0 +1,175 @@
+.box {
+  position: relative;
+}
+.btn {
+  position: absolute;
+
+  justify-content: center;
+}
+.b1 {
+  width: 600px;
+  height: 600px;
+  border-style: solid;
+  border-width: 5px;
+}
+.b2 {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-width: 3px;
+  left: 615px;
+  position: fixed;
+  display: flex;
+}
+
+.b3 {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  background-color: purple;
+  margin: 5px;
+  top: 450px;
+}
+.b3-1 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: purple;
+  margin: 5px;
+  top: 550px;
+}
+.b4 {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  background-color: red;
+  margin: 5px;
+  top: 500px;
+  left: 50px;
+}
+.b4-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 5px;
+  top: 550px;
+  left: 150px;
+}
+.b5 {
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  background-color: orange;
+  margin: 5px;
+  top: 550px;
+  left: 200px;
+}
+.b5-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: skyblue;
+  margin: 5px;
+  top: 550px;
+  left: 300px;
+}
+.b5-2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: skyblue;
+  margin: 5px;
+  top: 550px;
+  left: 400px;
+}
+
+.b6 {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+  top: 50px;
+  left: 50px;
+}
+.b6-1 {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  background-color: black;
+  margin: 5px;
+  top: 50px;
+  left: 50px;
+}
+.b6-2 {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+  top: 200px;
+}
+.b7 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+  top: 300px;
+  left: 50px;
+}
+.b7-1 {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background-color: black;
+  margin: 5px;
+  top: 300px;
+  left: 150px;
+}
+.b8 {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+  top: 50px;
+  left: 250px;
+}
+.b8-1 {
+  position: absolute;
+  width: 50px;
+  height: 200px;
+  background-color: black;
+  margin: 5px;
+  top: 50px;
+  left: 350px;
+}
+.b8-2 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+  top: 200px;
+  left: 350px;
+}
+.b9 {
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  background-color: black;
+  margin: 5px;
+  top: 20px;
+  left: 650px;
+}
+.b9-1 {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  margin: 5px;
+  top: 120px;
+  left: 650px;
+}

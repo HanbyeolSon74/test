@@ -1,0 +1,160 @@
+.box {
+  position: relative;
+}
+.btn {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.btn-1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.btn-2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 2;
+}
+.btn-3 {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: black;
+  z-index: 3;
+}
+.box2 {
+  position: absolute;
+  width: 20px;
+  height: 80px;
+  background-color: black;
+}
+.b1 {
+  background-color: red;
+  top: 50px;
+  left: 50px;
+}
+.b1-1 {
+  top: 75px;
+  left: 80px;
+}
+.b1-2 {
+  top: 85px;
+  left: 80px;
+}
+.b2 {
+  background-color: orange;
+  top: 110px;
+  left: 170px;
+  z-index: 2;
+}
+.b2-1 {
+  top: 150px;
+  left: 200px;
+}
+.b2-2 {
+  top: 150px;
+  left: 220px;
+}
+.bx2 {
+  top: 270px;
+  left: 250px;
+  /* z-index: 3; */
+}
+.b3 {
+  background-color: yellow;
+  top: 170px;
+  left: 300px;
+  z-index: 1;
+}
+.b3-1 {
+  top: 250px;
+  left: 360px;
+}
+.b3-2 {
+  top: 280px;
+  left: 370px;
+}
+.bx3 {
+  top: 330px;
+  left: 380px;
+}
+.b4 {
+  background-color: green;
+
+  top: 200px;
+  left: 420px;
+  z-index: 2;
+}
+.b4-1 {
+  top: 210px;
+  left: 490px;
+}
+.b4-2 {
+  top: 210px;
+  left: 505px;
+}
+.bx4 {
+  top: 360px;
+  left: 500px;
+}
+.b5 {
+  background-color: darkblue;
+  top: 280px;
+  left: 550px;
+  z-index: 1;
+}
+.b5-1 {
+  top: 350px;
+  left: 620px;
+}
+.b5-2 {
+  top: 380px;
+  left: 660px;
+}
+.bx5 {
+  top: 440px;
+  left: 640px;
+}
+.b6 {
+  background-color: purple;
+  top: 200px;
+  left: 670px;
+  z-index: 1;
+}
+.b6-1 {
+  top: 270px;
+  left: 740px;
+}
+.b6-2 {
+  top: 270px;
+  left: 770px;
+}
+.b7 {
+  background-color: red;
+  top: 200px;
+  left: 830px;
+}
+.b8 {
+  background-color: orange;
+  top: 170px;
+  left: 860px;
+  z-index: 1;
+}
+.b9 {
+  background-color: yellow;
+  top: 140px;
+  left: 890px;
+}
+.b10 {
+  background-color: green;
+  top: 110px;
+  left: 920px;
+  z-index: 1;
+}
