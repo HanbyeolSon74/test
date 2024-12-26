@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      const a = () => {
+        const num1 = prompt("첫번째 숫자를 입력해 주세요.");
+        const num2 = prompt("두번째 숫자를 입력해 주세요.");
+
+        return alert(Number(num1) + Number(num2) + "입니다.");
+      };
+
+      const m = () => {
+        const num1 = prompt("첫번째 숫자를 입력해 주세요.");
+        const num2 = prompt("두번째 숫자를 입력해 주세요.");
+
+        return alert(Number(num1) - Number(num2) + "입니다.");
+      };
+
+      const x = () => {
+        const num1 = prompt("첫번째 숫자를 입력해 주세요.");
+        const num2 = prompt("두번째 숫자를 입력해 주세요.");
+
+        return alert(Number(num1) * Number(num2) + "입니다.");
+      };
+
+      const n = () => {
+        const num1 = prompt("첫번째 숫자를 입력해 주세요.");
+        const num2 = prompt("두번째 숫자를 입력해 주세요.");
+
+        return alert(Number(num1) / Number(num2) + "입니다.");
+      };
+    </script>
+  </head>
+  <body>
+    <button onclick="a()">더하기</button>
+    <button onclick="m()">빼기</button>
+    <button onclick="x()">곱하기</button>
+    <button onclick="n()">나누기</button>
+  </body>
+</html>
