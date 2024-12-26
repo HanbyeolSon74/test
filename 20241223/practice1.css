@@ -1,0 +1,63 @@
+.box {
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgba(233, 233, 227, 0.97);
+}
+
+.b1 {
+  justify-content: center;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+.log {
+  font-weight: bold;
+}
+
+.b2 .menu {
+  display: flex;
+  gap: 20px;
+}
+
+.b3 .menu1 {
+  justify-content: flex-start;
+}
+
+.b3 .menu {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.b4 .menu {
+  display: flex;
+  gap: 20px;
+}
+
+.b4 .login {
+  font-weight: bold;
+}
+
+.b5 {
+  justify-content: center;
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.b6 .auth {
+  display: flex;
+  gap: 20px;
+}

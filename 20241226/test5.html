@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      const a = "asd";
+      const b = 123123;
+      const c = { data: "데이터" };
+      const d = (1, 2, "wer", "erw");
+
+      console.log(typeof d);
+
+      let math = prompt("수학 점수를 입력 하세요");
+      let eng = prompt("영어 점수를 입력 하세요");
+      let avg = (Number(math) + Number(eng)) / 2;
+
+      console.log(avg, "평균");
+
+      const number = 123;
+      const Str = "123";
+      const any = number + Str;
+
+      console.log(String(number));
+      console.log(Number(Str));
+      console.log(typeof any);
+
+      let result1, result2;
+      let num = 10;
+      let num2 = 10;
+
+      result1 = ++num;
+      result2 = --num;
+      console.log(result1);
+
+      // OR 연산자
+      // 이름이 뽀로로 이거나, 성인이면 통과
+      const name = "뽀로로";
+      const age = 18;
+      const adult = age > 19;
+      const data = "ㄹㅎㅇ";
+
+      if (name === "뽀로로" || age > 19) {
+        console.log("통과");
+      } else {
+        console.log("돌아가");
+      }
+
+      // &&는 둘중 하나라도 참이 아니면 불가
+
+      if (!!data) {
+        console.log("데이터 없음");
+      } else {
+        console.log("데이터 있음");
+      }
+    </script>
+  </head>
+
+  <body></body>
+</html>
