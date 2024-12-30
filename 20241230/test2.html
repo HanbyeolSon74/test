@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      const str = "user";
+      // switch문
+      switch (str) {
+        case "adimn": // str === admin
+          console.log("관리자 입니다.");
+          break;
+        case "user": // str === "user"
+          console.log("회원 입니다.");
+          break;
+        case "aaa": // str === aaa
+        case "bbb": // str === bbb
+          console.log("aaa입니다.");
+          break;
+        default: // 이 외의 모든 것
+          console.log("비회원 입니다.");
+          break;
+      }
+
+      // 조건 ? 참일경우 실행할 명령어(명령어 1개) :  거짓일 경우 실행할 명령어(명령어 1개)
+
+      const number = 22;
+      number >= 20
+        ? console.log("성인입니다.")
+        : console.log("미성년자입니다.");
+    </script>
+  </head>
+  <body></body>
+</html>

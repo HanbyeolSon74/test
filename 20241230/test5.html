@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      // 문자열 관련 메소드
+      let str = "Happy day~! ";
+
+      console.log(str.length);
+      console.log(str.toUpperCase()); // 모두 대문자로 변경
+      // 검색을 하는 상황? python, Python, PYTON / Python
+      // str.toLowerCase() - > python / db.toLowerCase() - > pyton
+
+      console.log(str.indexOf("p"));
+
+      // str.slice(startInd[,endIdx])
+      // startIdx 포함. endInx 포함x
+      console.log(str.slice(1, 4));
+
+      console.log(str.replace("p", "a"));
+      console.log(str.replaceAll("p", "a"));
+
+      // 실생활 사용 예
+      // phone.replace("-", ""); 010-0000-0000 -> 0100000-0000
+      // phone.replaceAll("-", ""); 010-0000-0000 -> 01000000000
+
+      console.log(str.repeat(3));
+      console.log(str.trim()); // 앞 뒤 공백 제거
+      // 언제 쓰냐? ' Pyton'
+      // 'pyton', ' pyton' / 'pyton'
+      // str.trim().toLowoerCase()
+
+      console.log(str.split("")); // 한글자씩 끊어서 배열에 저장
+      console.log(str.split(" ")); // 단어 기준으로 끊어서 배열에 저장
+      console.log(str.split("a")); // a 문자열을 기준으로 끊어서 배열에 저장
+      // 언제쓰냐?
+      // str.split('\n') // 엔터 기준으로 잘라서 저장
+      // str = '안녕하세요.\n안녕하세요.'
+      // str.split('\n') => ['안녕하세요.', '안녕하세요']
+      // for - > 적절한 위치에 br 태그 넣기
+
+      const str2 = "AAaaabbbb";
+      const lowerStr2 = str2.toLowerCase();
+      console.log(str2); // AAaaabbbb => str2의 원형이 바뀌진 않음!
+      console.log(lowerStr2); // aaaaabbbb
+
+      const str3 = "AAaaabbbb";
+      str3.toLowerCase();
+      console.log(str3); // AAaaabbbb => str3의 원형이 바뀌진 않음!
+    </script>
+  </head>
+  <body></body>
+</html>
