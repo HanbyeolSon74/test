@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      for (let i = 1; i <= 100; i++) {
+        console.log(i);
+      }
+
+      let number = 0;
+      for (let i = 1; i <= 100; i++) {
+        number += i;
+      }
+
+      console.log(number);
+
+      const array = Array.from({ length: 100 }, (_, i) => i + 1);
+      let number2 = 0;
+      for (const num of array) {
+        number2 += num;
+      }
+      console.log(number2);
+
+      const numbers = Array.from({ length: 100 }, (_, i) => i + 1);
+      let sum = 0;
+      numbers.forEach((num) => {
+        sum += num;
+      });
+      console.log(sum);
+    </script>
+  </head>
+  <body></body>
+</html>

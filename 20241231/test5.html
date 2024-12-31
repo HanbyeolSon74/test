@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- before() -->
+    <!-- <p>본문입니다</p> -->
+    <div id="container">
+      <h3>제목입니다</h3>
+      <!-- js로 아래 태그 추가 -->
+      <!-- apend(), appendChild() -->
+      <p>본문입니다</p>
+    </div>
+
+    <!-- after() -->
+    <!-- <p>본문입니다</p> -->
+
+    <div id="container2">
+      <h3>제목입니다2</h3>
+    </div>
+
+    <script>
+      const container = document.getElementById("container");
+
+      container.innerHTML = "<h3>제목입니다</h3> <p>본문입니다</p>";
+
+      container.innerHTML += "<p>본문입니다</p>";
+
+      // 1. p태그 만듬
+      const p = document.createElement("p"); // <p></p>
+
+      // 2. p태그 내부에 원하는 텍스트 작성
+      p.innerText = "본문입니다"; // <p>본문입니다</p>
+
+      // 3.container 내부(마지막)에 p태그 추가
+      container.append(p); // 여러개의 요소 및 문자열 인자로 받을 수 있음
+      container.appendChild(p); // 하나의 요소(Element)만 인자로 받을 수 있음 (문자열 안됨)
+
+      const p2 = document.createElement("p");
+      p2.innerText = "본문입니다2";
+      container.append(p, p2, "문자열 추가 가능");
+
+      container.prepend(p); // container 내부(첫번째)에 요소 추가. 함수 형태는 append와 동일
+
+      container.before(p); // container 이전 형제 요소 추가. 함수 형태는 append와 동일
+
+      container.after(p); // container 다음 형제 요소 추가. 함수 형태는 append와 동일
+
+      const container2 = document.getElementById("container2");
+
+      const h3 = document.querySelector("#container2 > h3");
+
+      h3.remove(); // h3요소 삭제
+
+      container2.removeChild(h3); // container2 자식 중 h3에 해당하는 자식 삭제
+
+      container2.innerHTML = ""; // container2안 모든 내용 삭제
+    </script>
+  </body>
+</html>

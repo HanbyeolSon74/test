@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      const object = { a: 1, b: 2, c: 3 };
+
+      const now = new Date(); // 이 코드가 읽히는 시간을 반환
+      const date = new Date(2021, 4, 23); // 년, 월, 일, 시, 분, 초
+
+      const date2 = new Date("2022-02-01"); // 중요 // 데이터베이스 실제 데이터 저장하게 될 경우
+      const date3 = new Date("2022/02/01"); // 중요
+
+      // 2024-12-31 16시 기준
+      console.log(now.getFullYear()); // 년도 반환 // 2024
+      console.log(now.getDate()); // 날짜 반환 (일 -> 31)
+      console.log(now.getDay()); // 요일 -> (화 -> 숫자로 변환)(일(0),월(1),화(2),수(3),목(4),금(5),토(6))
+      console.log(now.getTime()); // 1970.1.1부터 몇 ms 흘렀는지 숫자로 반환
+
+      // 2025-11-1 접속해서 강의 수강하면?
+      const expiredDate = new Date("2025-12-31");
+
+      // if(now.getTime() > expiredDate.getTime()) => 만료가 된 강의
+      // else => 만료되지 않음
+
+      console.log(now.getHours()); // 시간 -> 16
+      console.log(now.getMinutes()); // 분 -> 44
+      console.log(now.getSeconds()); // 초 -> 46
+
+      const year = now.getFullYear(); // 2024
+      const month = now.getMonth() + 1; // 12 (getMonth +1)
+      const datee = now.getDate(); // 31
+
+      console.log(`${year}-${month}-${datee}`);
+
+      // javascript clss
+      // class : 객체를 만드는 틀
+      // class로 만들어 지는 것 -> 객체
+
+      console.log(Math.Pi);
+      console.log(Math.E);
+
+      console.log(Math.min(2, 3, 4, 5, 6, 7, 1)); // 최솟값
+      console.log(Math.max(2, 3, 4, 5, 6, 7, 1)); // 최댓값
+      console.log(Math.random()); // 0 <= x < 1
+      console.log(Math.floor(3.14)); // 내림 (소수점 제거)
+      console.log(Math.ceil(3.14)); // 올림
+      console.log(Math.round(3.14)); // 반올림
+
+      // 1 ~ 10
+      // Math.random() : 0 <= x < 1
+      // Math.random() * 10 <= x < 11
+      // Math.random() * 10 + 1 : 1<= x < 11
+      console.log(Math.floor(Math.random() * 10 + 1)); // 1 <= x < 10
+
+      console.log(document);
+    </script>
+  </head>
+  <body></body>
+</html>
