@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./practice2.css" />
+  </head>
+  <body>
+    <div class="title"><h1>2025년 01월</h1></div>
+    <label for="date">날짜:</label>
+    <input type="text" id="date" />
+    <br />
+    <label for="content">내용:</label>
+    <input type="text" id="content" />
+    <button id="add">작성</button>
+
+    <table id="calendar">
+      <thead>
+        <tr>
+          <th>日</th>
+          <th>月</th>
+          <th>火</th>
+          <th>水</th>
+          <th>木</th>
+          <th>金</th>
+          <th>土</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const calendar = document
+        .getElementById("calendar")
+        .getElementsByTagName("tbody")[0];
+      const dateInput = document.getElementById("date");
+      const contentInput = document.getElementById("content");
+      const addButton = document.getElementById("add");
+
+      const firstDayOfMonth = new Date(2025, 0, 1);
+      const daysInMonth = 31;
+
+      let row = calendar.insertRow();
+      let dayOfWeek = firstDayOfMonth.getDay();
+      const events = {};
+
+      for (let i = 0; i < dayOfWeek; i++) {
+        row.insertCell();
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        if (dayOfWeek === 7) {
+          dayOfWeek = 0;
+          row = calendar.insertRow();
+        }
+
+        const cell = row.insertCell();
+        cell.textContent = day;
+
+        cell.addEventListener("click", function () {
+          dateInput.value = day;
+        });
+
+        if (dayOfWeek === 0) {
+          cell.classList.add("sunday");
+        } else if (dayOfWeek === 6) {
+          cell.classList.add("saturday");
+        }
+
+        dayOfWeek++;
+      }
+
+      addButton.addEventListener("click", function () {
+        const selectedDay = parseInt(dateInput.value, 10);
+        const content = contentInput.value;
+
+        if (isNaN(selectedDay) || selectedDay < 1 || selectedDay > 31) {
+          alert("1부터 31 사이의 숫자를 입력해주세요.");
+          return;
+        }
+
+        if (!content) {
+          alert("내용을 작성해주세요.");
+          return;
+        }
+
+        const cells = calendar.getElementsByTagName("td");
+        let targetCell = null;
+
+        for (let cell of cells) {
+          const cellDay = parseInt(cell.textContent, 10);
+          if (cellDay === selectedDay) {
+            targetCell = cell;
+            break;
+          }
+        }
+
+        if (targetCell) {
+          const existingContent = targetCell.querySelector(".event-content");
+          if (existingContent) {
+            existingContent.remove();
+          }
+
+          const eventDiv = document.createElement("div");
+          eventDiv.textContent = content;
+          eventDiv.className = "event-content";
+          targetCell.appendChild(eventDiv);
+        } else {
+          alert("유효한 날짜를 선택해주세요.");
+        }
+
+        dateInput.value = "";
+        contentInput.value = "";
+      });
+    });
+  </script>
+</html>

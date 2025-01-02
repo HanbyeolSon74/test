@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../20250102/practice1.css" />
+  </head>
+  <body>
+    <div class="box">
+      <img id="image" src="../20250102/img/배경.png" />
+
+      <div class="btns">
+        <div onclick="change('사과')">사과</div>
+        <div onclick="change('바나나')">바나나</div>
+        <div onclick="change('포도')">포도</div>
+        <div onclick="change('복숭아')">복숭아</div>
+      </div>
+    </div>
+  </body>
+
+  <!-- <script>
+    const change = (type) => {
+      if (type === "사과") {
+        document.querySelector("img").src = "../20250102/img/사과.jpg";
+      } else if (type === "바나나") {
+        document.querySelector("img").src = "../20250102/img/바나나.jpg";
+      } else if (type === "포도") {
+        document.querySelector("img").src = "../20250102/img/포도.jpg";
+      } else {
+        document.querySelector("img").src = "../20250102/img/복숭아.jpeg";
+      }
+    };
+  </script> -->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    const change = (type) => {
+      let imageSrc = "";
+      if (type === "사과") {
+        imageSrc = "../20250102/img/사과.jpg";
+      } else if (type === "바나나") {
+        imageSrc = "../20250102/img/바나나.jpg";
+      } else if (type === "포도") {
+        imageSrc = "../20250102/img/포도.jpg";
+      } else {
+        imageSrc = "../20250102/img/복숭아.jpeg";
+      }
+
+      // jQuery to change the image source
+      $("#image").attr("src", imageSrc);
+    };
+  </script>
+</html>
