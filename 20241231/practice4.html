@@ -7,29 +7,44 @@
     <title>Document</title>
 
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
       table {
         width: 100%;
         border-collapse: collapse;
-      }
-      table,
-      th,
-      td {
-        border: 1px solid black;
+        margin-top: 20px;
       }
       th,
       td {
-        text-align: center;
+        border: 1px solid #ddd;
         padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #f4f4f4;
+      }
+      input,
+      button {
+        margin: 5px 0;
+        padding: 8px;
+        font-size: 16px;
       }
     </style>
   </head>
   <body>
-    <div>방명록입니다.</div>
-    <div>작성자<input type="text" id="text1" /></div>
-    <div>내용<input type="text" id="content" /></div>
-
-    <button onclick="add()">작성</button>
-
+    <h1>방명록</h1>
+    <div>
+      <label for="author">작성자:</label>
+      <input type="text" id="author" placeholder="작성자 이름">
+      <br>
+      <label for="content">내용:</label>
+      <input type="text" id="content" placeholder="내용 입력">
+      <br>
+      <button id="submitBtn">작성</button>
+    </div>
+  
     <table>
       <thead>
         <tr>
@@ -39,9 +54,41 @@
           <th>작성일</th>
         </tr>
       </thead>
-      <tbody id="guestbook"></tbody>
+      <tbody id="guestbookTable">
+      </tbody>
     </table>
-
-    <script></script>
+  
+    <script>
+      const submitBtn = document.getElementById("submitBtn");
+      const guestbookTable = document.getElementById("guestbookTable");
+      let entryNumber = 1;
+  
+      submitBtn.addEventListener("click", () => {
+        const author = document.getElementById("author").value.trim();
+        const content = document.getElementById("content").value.trim();
+  
+        if (!author || !content) {
+          alert("작성자와 내용을 입력해주세요.");
+          return;
+        }
+  
+        const currentTime = new Date();
+        const formattedTime = `${currentTime.getFullYear()}-${currentTime.getMonth() + 1}-${currentTime.getDate()} ${currentTime.getHours()}:${currentTime.getMinutes()}`;
+  
+        const newRow = document.createElement("tr");
+        newRow.innerHTML = `
+          <td>${entryNumber++}</td>
+          <td>${author}</td>
+          <td>${content}</td>
+          <td>${formattedTime}</td>
+        `;
+  
+        guestbookTable.appendChild(newRow);
+  
+        // 입력 필드 초기화
+        document.getElementById("author").value = "";
+        document.getElementById("content").value = "";
+      });
+    </script>
   </body>
 </html>
